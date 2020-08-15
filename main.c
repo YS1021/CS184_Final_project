@@ -37,7 +37,7 @@ int main(int argc, const char * argv[])
         word = (char *) argv[2];
     }
 
-    int b_w = 1024; /* bitmap width */
+    int b_w = strlen(word) * 64; /* bitmap width */
     int b_h = 128; /* bitmap height */
     int l_h = 64; /* line height */
 
